@@ -7,13 +7,13 @@ const util = require("util");
 const questions = [
   {
     type: "input",
-    name: "ProjectTitle",
+    name: "Title",
     message: "What would you like your Project Title to be named?",
   },
 
   {
     type: "input",
-    name: "ProjectDescription",
+    name: "Description",
     message: "Please write a short description of your project.",
   },
 
@@ -42,6 +42,9 @@ const questions = [
       },
       {
         name: "Apache License 2.0",
+      },
+      {
+        name: "The Unilicense",
       },
     ],
   },
