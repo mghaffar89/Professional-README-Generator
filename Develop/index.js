@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
+const util = require("util");
 
 // array of questions for user
 const questions = [
@@ -40,9 +41,6 @@ const questions = [
         name: "MIT License",
       },
       {
-        name: "The Unlicense",
-      },
-      {
         name: "Apache License 2.0",
       },
     ],
@@ -53,10 +51,17 @@ const questions = [
     name: "Contributors",
     message: "How many contributors will there be on your project?",
   },
+
   {
     type: "input",
-    name: "FAQ1",
-    message: "How do you initialize the project?",
+    name: "Tests",
+    message: "Are there any test instructions for this project?",
+  },
+
+  {
+    type: "input",
+    name: "Email",
+    message: "What is your email address?",
   },
 ];
 
