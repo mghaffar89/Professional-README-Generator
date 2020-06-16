@@ -86,7 +86,7 @@ async function init() {
   console.log("Welcome to the README Generator!");
   try {
     const answers = await promptUser();
-    const readMe = generateMarkdown(answers, user);
+    const readMe = generateMarkdown(answers);
     writeToFile("GeneratedREADME.md", readMe);
     console.log("**README file successfully created!**");
   } catch (err) {

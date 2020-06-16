@@ -1,9 +1,9 @@
 // function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${response.Title}
+function generateMarkdown(answers) {
+  return `# ${answers.Title}
 
 ## Description 
-${response.Description}
+${answers.Description}
 
 ## Table of Contents
 * [Installation]
@@ -14,23 +14,23 @@ ${response.Description}
 * [Questions]
 
 ## Installation
-${response.Install}
+${answers.Install}
 
 ## Usage 
-${response.Usage}
+${answers.Usage}
 
 ## License
-The license is ${response.License}. 
+The license is ${answers.License}. 
 
 
 ## Credits
-${response.Contributors}
+${answers.Contributors}
 
 ## Tests
-${response.Tests}
+${answers.Tests}
 
 ## Questions
-If you have any questions please contact me at ${response.Email}.
+If you have any questions please contact me at ${answers.Email}.
 `;
 }
 
