@@ -9,21 +9,25 @@ const questions = [
     name: "ProjectTitle",
     message: "What would you like your Project Title to be named?",
   },
+
   {
     type: "input",
     name: "ProjectDescription",
     message: "Please write a short description of your project.",
   },
+
   {
     type: "input",
     name: "Install",
     message: "What are the steps required to install your project?",
   },
+
   {
     type: "input",
     name: "Usage",
     message: "Please provide examples of how your project could be used.",
   },
+
   {
     type: "list",
     name: "License",
@@ -43,11 +47,11 @@ const questions = [
       },
     ],
   },
+
   {
     type: "input",
     name: "Contributors",
     message: "How many contributors will there be on your project?",
-    validate: validateContributors,
   },
   {
     type: "input",
