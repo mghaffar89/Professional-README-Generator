@@ -70,7 +70,17 @@ function writeToFile(fileName, data) {
 }
 
 // function to initialize program
-function init() {}
+async function init() {
+  console.log("Welcome to the README Generator!");
+  try {
+    const answers = await promptUser();
+    const readMe = generateMarkdown(answers, user);
+    writeToFile("GeneratedREADME.md", readMe);
+    console.log("**README file successfully created!**");
+  } catch (err) {
+    console.log(err);
+  }
+}
 
 // function call to initialize program
 init();
