@@ -3,6 +3,7 @@ function generateMarkdown(answers) {
   return `# ${answers.Title}
 
 ## Description 
+
 ${answers.Description}
 
 ## Table of Contents
@@ -14,22 +15,27 @@ ${answers.Description}
 * [Questions]
 
 ## Installation
+
 ${answers.Install}
 
 ## Usage 
+
 ${answers.Usage}
 
 ## License
+
 The license is ${answers.License}. 
 
-
 ## Credits
+
 ${answers.Contributors}
 
 ## Tests
+
 ${answers.Tests}
 
 ## Questions
+
 If you have any questions please contact me at ${answers.Email}.
 `;
 }
